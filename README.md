@@ -46,7 +46,7 @@ NeuroTrack-AI/
 
 ```bash
 git clone https://github.com/your-username/Tracker.git
-cd NeuroTrack-AI
+cd Tracker
 pip install -r requirements.txt
 ```
 
