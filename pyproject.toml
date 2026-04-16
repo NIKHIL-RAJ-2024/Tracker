@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracker"
+version = "0.1.0"
+description = "A Streamlit laptop usage tracker"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "streamlit",
+  "psutil",
+  "pandas",
+  "matplotlib",
+  "numpy",
+  "scikit-learn",
+]
+
+[project.scripts]
+tracker = "tracker_cli:main"
+
+[tool.setuptools]
+py-modules = ["tracker", "tracker_cli"]
