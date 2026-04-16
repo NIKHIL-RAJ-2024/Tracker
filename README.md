@@ -1,26 +1,98 @@
-# Tracker
+# 🧠 NeuroTrack AI – Smart System Intelligence Dashboard
 
-## Setup
+## 🚀 Overview
 
-Install the project dependencies with `pip`, not `pipx`.
+NeuroTrack AI is a real-time system monitoring and analytics dashboard built using Python and Streamlit.
+It tracks system performance, analyzes usage patterns, and provides AI-driven insights to improve system health and efficiency.
 
-`pipx` installs standalone command-line apps; it does not support `-r requirements.txt` for project dependencies.
+---
 
-Recommended setup:
+## ✨ Features
+
+* 💻 Real-time system monitoring (CPU, RAM, Disk)
+* ⏱️ Uptime tracking with detailed breakdown
+* 📊 Interactive analytics dashboard
+* 🧠 AI-based insights & recommendations
+* 🚨 Smart alerts for abnormal system behavior
+* 📁 Continuous data logging (CSV-based)
+* 🎨 Clean multi-page UI
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* Streamlit
+* Pandas
+* Matplotlib
+* Psutil
+* Scikit-learn (for basic AI insights)
+
+---
+
+## 📂 Project Structure
+
+```
+NeuroTrack-AI/
+│── tracker.py
+│── usage_log.csv
+│── requirements.txt
+│── README.md
+```
+
+---
+
+## ⚙️ Installation
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+git clone https://github.com/your-username/NeuroTrack-AI.git
+cd NeuroTrack-AI
 pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the App
+
+```bash
 streamlit run tracker.py
 ```
 
-Note: you must run the activate command in every new terminal session before using `streamlit`.
-If you do not want to activate, run with the full path instead: `.venv/bin/streamlit run tracker.py`.
+## 🧠 How It Works
 
-If you prefer `pipx`, install the project itself instead of the requirements file:
+* Collects system metrics using `psutil`
+* Logs data continuously into CSV
+* Visualizes trends using `matplotlib`
+* Generates insights using simple AI logic
+* Calculates system health score dynamically
 
-```bash
-pipx install .
-tracker
-```
+---
+
+## 💡 Future Improvements
+
+* 🔮 Deep learning-based prediction (LSTM)
+* ☁️ Cloud storage (Firebase / AWS)
+* 👤 Multi-user dashboard
+* 📱 Mobile app integration
+* 🤖 Voice assistant integration
+
+---
+
+## 🎯 Use Cases
+
+* System performance monitoring
+* Developer productivity tracking
+* Lightweight DevOps analytics
+* Personal system health assistant
+
+---
+
+## 📌 Author
+
+**Nikhil Raj**
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
